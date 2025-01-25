@@ -1,3 +1,4 @@
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -25,10 +26,6 @@ nav ul {
     gap: 15px;
 }
 
-nav ul li {
-    display: inline;
-}
-
 nav ul li a {
     color: #fff;
     text-decoration: none;
@@ -38,7 +35,6 @@ nav ul li a {
     transition: color 0.3s ease-in-out;
 }
 
-/* Efeito de hover */
 nav ul li a::before {
     content: '';
     position: absolute;
@@ -81,11 +77,13 @@ section {
 }
 
 .banner h2 {
+    color: #000;
     font-size: 2.5em;
     margin-bottom: 20px;
 }
 
 .banner p {
+    color: #000;
     font-size: 1.2em;
     margin-bottom: 40px;
 }
@@ -152,4 +150,30 @@ footer {
     margin: 0 10px;
     text-decoration: none;
     font-size: 1.2em;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .gallery img {
+        width: 48%;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery img {
+        width: 100%;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    .banner {
+        background-size: cover;
+        padding: 1em;
+    }
+    .banner h2 {
+        font-size: 2em;
+    }
+    .banner p {
+        font-size: 1em;
+    }
 }

@@ -2,12 +2,13 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background: url('img/capa.jpeg') no-repeat center center fixed;
+    background-size: cover;
     color: #333;
 }
 
 header {
-    background-color: #333;
+    background-color: rgba(51, 51, 51, 0.8); /* Translucidez adicionada */
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -25,10 +26,6 @@ nav ul {
     gap: 15px;
 }
 
-nav ul li {
-    display: inline;
-}
-
 nav ul li a {
     color: #fff;
     text-decoration: none;
@@ -38,7 +35,6 @@ nav ul li a {
     transition: color 0.3s ease-in-out;
 }
 
-/* Efeito de hover */
 nav ul li a::before {
     content: '';
     position: absolute;
@@ -64,6 +60,8 @@ nav ul li a:hover {
 section {
     padding: 60px 20px;
     margin: 20px 0;
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco translúcido */
+    border-radius: 8px;
 }
 
 .container {
@@ -73,7 +71,7 @@ section {
 }
 
 .banner {
-    background: url('banner.jpg') no-repeat center center/cover;
+    background: rgba(0, 0, 0, 0.5); /* Fundo escuro translúcido */
     color: #fff;
     text-align: center;
     padding: 100px 20px;
@@ -143,7 +141,7 @@ button:hover {
 footer {
     text-align: center;
     padding: 20px 0;
-    background-color: #333;
+    background-color: rgba(51, 51, 51, 0.8); /* Translucidez adicionada */
     color: #fff;
 }
 
@@ -152,4 +150,29 @@ footer {
     margin: 0 10px;
     text-decoration: none;
     font-size: 1.2em;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .gallery img {
+        width: 48%;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery img {
+        width: 100%;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    .banner {
+        padding: 1em;
+    }
+    .banner h2 {
+        font-size: 2em;
+    }
+    .banner p {
+        font-size: 1em;
+    }
 }

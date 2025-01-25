@@ -1,14 +1,14 @@
-
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background: url('img/capa.jpeg') no-repeat center center fixed;
+    background-size: cover;
     color: #333;
 }
 
 header {
-    background-color: #333;
+    background-color: rgba(51, 51, 51, 0.8); /* Translucidez adicionada */
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -60,6 +60,8 @@ nav ul li a:hover {
 section {
     padding: 60px 20px;
     margin: 20px 0;
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco translúcido */
+    border-radius: 8px;
 }
 
 .container {
@@ -69,7 +71,7 @@ section {
 }
 
 .banner {
-    background: url('banner.jpg') no-repeat center center/cover;
+    background: rgba(0, 0, 0, 0.5); /* Fundo escuro translúcido */
     color: #fff;
     text-align: center;
     padding: 100px 20px;
@@ -77,13 +79,11 @@ section {
 }
 
 .banner h2 {
-    color: #000;
     font-size: 2.5em;
     margin-bottom: 20px;
 }
 
 .banner p {
-    color: #000;
     font-size: 1.2em;
     margin-bottom: 40px;
 }
@@ -141,7 +141,7 @@ button:hover {
 footer {
     text-align: center;
     padding: 20px 0;
-    background-color: #333;
+    background-color: rgba(51, 51, 51, 0.8); /* Translucidez adicionada */
     color: #fff;
 }
 
@@ -167,7 +167,6 @@ footer {
         flex-direction: column;
     }
     .banner {
-        background-size: cover;
         padding: 1em;
     }
     .banner h2 {
